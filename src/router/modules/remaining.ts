@@ -45,5 +45,30 @@ export default [
         component: () => import("@/layout/redirect.vue")
       }
     ]
+  },
+  // ── 獨立詳情頁(對齊舊 88_BO_ADMIN：window.open 開新分頁、無後台側邊欄) ──
+  {
+    path: "/memberDetail/detail/:id?",
+    name: "MemberDetailPage",
+    component: () => import("@/views/member/detail/index.vue"),
+    meta: { title: $t("member.menuDetail"), showLink: false }
+  },
+  {
+    path: "/memberDetail/walletLog/:id?",
+    name: "MemberWalletLogPage",
+    component: () => import("@/views/member/walletLog/index.vue"),
+    meta: { title: $t("member.menuWalletLog"), showLink: false }
+  },
+  {
+    path: "/memberDetail/luckwalletLog/:id?",
+    name: "MemberLuckwalletLogPage",
+    component: () => import("@/views/member/luckwalletLog/index.vue"),
+    meta: { title: $t("member.menuLuckwalletLog"), showLink: false }
+  },
+  {
+    path: "/agencyDetail/detail/:id?",
+    name: "AgencyDetailPage",
+    component: () => import("@/views/agency/agencyMain/detail/index.vue"),
+    meta: { title: $t("agency.menuAgencyMainDetail"), showLink: false }
   }
 ] satisfies Array<RouteConfigsTable>;

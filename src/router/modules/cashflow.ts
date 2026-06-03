@@ -29,19 +29,19 @@ export default {
       }
     },
     {
-      path: "/cashflow/withdrawLimit",
-      name: "CashflowWithdrawLimit",
-      component: () => import("@/views/cashflow/withdrawLimit/index.vue"),
-      meta: {
-        title: $t("cashflow.menuWithdrawLimit")
-      }
-    },
-    {
       path: "/cashflow/payout_navi",
       name: "CashflowPayoutNavi",
       component: () => import("@/views/cashflow/payout_navi/index.vue"),
       meta: {
         title: $t("cashflow.menuPayoutNavi")
+      }
+    },
+    {
+      path: "/cashflow/withdrawLimit",
+      name: "CashflowWithdrawLimit",
+      component: () => import("@/views/cashflow/withdrawLimit/index.vue"),
+      meta: {
+        title: $t("cashflow.menuWithdrawLimit")
       }
     },
     {

@@ -13,14 +13,6 @@ export default {
   },
   children: [
     {
-      path: "/luckmoney/luckwallet",
-      name: "LuckmoneyLuckwallet",
-      component: () => import("@/views/luckmoney/luckwallet/index.vue"),
-      meta: {
-        title: $t("luckmoney.menuLuckwallet")
-      }
-    },
-    {
       path: "/luckmoney/playerReport",
       name: "LuckmoneyPlayerReport",
       component: () => import("@/views/luckmoney/playerReport/index.vue"),
@@ -42,6 +34,14 @@ export default {
       component: () => import("@/views/luckmoney/lmGameGroup/index.vue"),
       meta: {
         title: $t("luckmoney.menuLmGameGroup")
+      }
+    },
+    {
+      path: "/luckmoney/luckwallet",
+      name: "LuckmoneyLuckwallet",
+      component: () => import("@/views/luckmoney/luckwallet/index.vue"),
+      meta: {
+        title: $t("luckmoney.menuLuckwallet")
       }
     }
   ]

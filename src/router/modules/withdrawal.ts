@@ -13,24 +13,6 @@ export default {
   },
   children: [
     {
-      path: "/withdrawal/financial/check/agency/:sn",
-      name: "FinancialCheckAgency",
-      component: () => import("@/views/withdrawal/financial_check_agency/index.vue"),
-      meta: {
-        title: $t("withdrawal.menuFinancialCheckAgency"),
-        showLink: false
-      }
-    },
-    {
-      path: "/withdrawal/payout_agency/:sn",
-      name: "WithdrawalPayoutAgency",
-      component: () => import("@/views/withdrawal/payout_agency/index.vue"),
-      meta: {
-        title: $t("withdrawal.payoutMenuAgency"),
-        showLink: false
-      }
-    },
-    {
       path: "/withdrawal/risk_check/:sn",
       name: "WithdrawalRiskCheck",
       component: () => import("@/views/withdrawal/risk_check/index.vue"),
@@ -62,6 +44,24 @@ export default {
       component: () => import("@/views/withdrawal/payout/index.vue"),
       meta: {
         title: $t("withdrawal.menuPayout"),
+        showLink: false
+      }
+    },
+    {
+      path: "/withdrawal/financial/check/agency/:sn",
+      name: "FinancialCheckAgency",
+      component: () => import("@/views/withdrawal/financial_check_agency/index.vue"),
+      meta: {
+        title: $t("withdrawal.menuFinancialCheckAgency"),
+        showLink: false
+      }
+    },
+    {
+      path: "/withdrawal/payout_agency/:sn",
+      name: "WithdrawalPayoutAgency",
+      component: () => import("@/views/withdrawal/payout_agency/index.vue"),
+      meta: {
+        title: $t("withdrawal.payoutMenuAgency"),
         showLink: false
       }
     }

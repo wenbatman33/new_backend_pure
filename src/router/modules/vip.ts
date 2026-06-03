@@ -5,21 +5,13 @@ export default {
   path: "/vip",
   name: "Vip",
   component: Layout,
-  redirect: "/vip/vipBlock",
+  redirect: "/vip/vipList",
   meta: {
     icon: "ant-design:trophy-twotone",
     title: $t("vip.menuVip"),
     rank: 6
   },
   children: [
-    {
-      path: "/vip/vipBlock",
-      name: "VipBlock",
-      component: () => import("@/views/vip/vipBlock/index.vue"),
-      meta: {
-        title: $t("vip.menuVipBlock")
-      }
-    },
     {
       path: "/vip/vipList",
       name: "VipList",
@@ -37,14 +29,6 @@ export default {
       }
     },
     {
-      path: "/vip/vipLevelHistory",
-      name: "VipLevelHistory",
-      component: () => import("@/views/vip/vipLevelHistory/index.vue"),
-      meta: {
-        title: $t("vip.menuVipLevelHistory")
-      }
-    },
-    {
       path: "/vip/vipReturn",
       name: "VipReturn",
       component: () => import("@/views/vip/vipReturn/index.vue"),
@@ -58,6 +42,22 @@ export default {
       component: () => import("@/views/vip/vipReturnGameGroup/index.vue"),
       meta: {
         title: $t("vip.menuVipReturnGameGroup")
+      }
+    },
+    {
+      path: "/vip/vipBlock",
+      name: "VipBlock",
+      component: () => import("@/views/vip/vipBlock/index.vue"),
+      meta: {
+        title: $t("vip.menuVipBlock")
+      }
+    },
+    {
+      path: "/vip/vipLevelHistory",
+      name: "VipLevelHistory",
+      component: () => import("@/views/vip/vipLevelHistory/index.vue"),
+      meta: {
+        title: $t("vip.menuVipLevelHistory")
       }
     },
     {

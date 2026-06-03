@@ -5,13 +5,21 @@ export default {
   path: "/payment",
   name: "Payment",
   component: Layout,
-  redirect: "/payment/pay_channel_service",
+  redirect: "/payment/finance",
   meta: {
     icon: "la:money-bill",
     title: $t("payment.menu"),
     rank: 11
   },
   children: [
+    {
+      path: "/payment/finance",
+      name: "PaymentFinance",
+      component: () => import("@/views/payment/finance/index.vue"),
+      meta: {
+        title: $t("payment.menuFinance")
+      }
+    },
     {
       path: "/payment/pay_channel_service",
       name: "PaymentPayChannelService",
@@ -21,11 +29,11 @@ export default {
       }
     },
     {
-      path: "/payment/pay_bank_card",
-      name: "PaymentPayBankCard",
-      component: () => import("@/views/payment/pay_bank_card/index.vue"),
+      path: "/payment/pay_channel",
+      name: "PaymentPayChannel",
+      component: () => import("@/views/payment/pay_channel/index.vue"),
       meta: {
-        title: $t("payment.menuPayBankCard")
+        title: $t("payment.menuPayChannel")
       }
     },
     {
@@ -45,11 +53,11 @@ export default {
       }
     },
     {
-      path: "/payment/pay_channel",
-      name: "PaymentPayChannel",
-      component: () => import("@/views/payment/pay_channel/index.vue"),
+      path: "/payment/pay_bank_card",
+      name: "PaymentPayBankCard",
+      component: () => import("@/views/payment/pay_bank_card/index.vue"),
       meta: {
-        title: $t("payment.menuPayChannel")
+        title: $t("payment.menuPayBankCard")
       }
     },
     {
@@ -58,14 +66,6 @@ export default {
       component: () => import("@/views/payment/pay_u/index.vue"),
       meta: {
         title: $t("payment.menuPayU")
-      }
-    },
-    {
-      path: "/payment/finance",
-      name: "PaymentFinance",
-      component: () => import("@/views/payment/finance/index.vue"),
-      meta: {
-        title: $t("payment.menuFinance")
       }
     }
   ]

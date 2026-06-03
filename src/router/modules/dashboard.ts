@@ -13,14 +13,6 @@ export default {
   },
   children: [
     {
-      path: "/dashboard/analysis",
-      name: "DashboardAnalysis",
-      component: () => import("@/views/dashboard/analysis/index.vue"),
-      meta: {
-        title: $t("dashboard.menuAnalysis")
-      }
-    },
-    {
       path: "/dashboard/website",
       name: "DashboardWebsite",
       component: () => import("@/views/dashboard/website/index.vue"),
@@ -29,19 +21,29 @@ export default {
       }
     },
     {
-      path: "/dashboard/workbench",
-      name: "DashboardWorkbench",
-      component: () => import("@/views/dashboard/workbench/index.vue"),
-      meta: {
-        title: $t("dashboard.menuWorkbench")
-      }
-    },
-    {
       path: "/dashboard/quota",
       name: "DashboardQuota",
       component: () => import("@/views/dashboard/quota/index.vue"),
       meta: {
         title: $t("dashboard.menuQuota")
+      }
+    },
+    {
+      path: "/dashboard/workbench",
+      name: "DashboardWorkbench",
+      component: () => import("@/views/dashboard/workbench/index.vue"),
+      meta: {
+        title: $t("dashboard.menuWorkbench"),
+        showLink: false
+      }
+    },
+    {
+      path: "/dashboard/analysis",
+      name: "DashboardAnalysis",
+      component: () => import("@/views/dashboard/analysis/index.vue"),
+      meta: {
+        title: $t("dashboard.menuAnalysis"),
+        showLink: false
       }
     }
   ]

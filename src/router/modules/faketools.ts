@@ -13,22 +13,6 @@ export default {
   },
   children: [
     {
-      path: "/faketools/deposit",
-      name: "FaketoolsDeposit",
-      component: () => import("@/views/faketools/deposit/index.vue"),
-      meta: {
-        title: $t("faketools.menuDeposit")
-      }
-    },
-    {
-      path: "/faketools/agency",
-      name: "FaketoolsAgency",
-      component: () => import("@/views/faketools/agency/index.vue"),
-      meta: {
-        title: $t("faketools.menuAgency")
-      }
-    },
-    {
       path: "/faketools/member",
       name: "FaketoolsMember",
       component: () => import("@/views/faketools/member/index.vue"),
@@ -37,11 +21,27 @@ export default {
       }
     },
     {
+      path: "/faketools/deposit",
+      name: "FaketoolsDeposit",
+      component: () => import("@/views/faketools/deposit/index.vue"),
+      meta: {
+        title: $t("faketools.menuDeposit")
+      }
+    },
+    {
       path: "/faketools/betlog",
       name: "FaketoolsBetlog",
       component: () => import("@/views/faketools/betlog/index.vue"),
       meta: {
         title: $t("faketools.menuBetlog")
+      }
+    },
+    {
+      path: "/faketools/agency",
+      name: "FaketoolsAgency",
+      component: () => import("@/views/faketools/agency/index.vue"),
+      meta: {
+        title: $t("faketools.menuAgency")
       }
     }
   ]

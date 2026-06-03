@@ -13,30 +13,6 @@ export default {
   },
   children: [
     {
-      path: "/risk_control/risk_bot_management",
-      name: "RiskControlRiskBotManagement",
-      component: () => import("@/views/risk_control/risk_bot_management/index.vue"),
-      meta: {
-        title: $t("risk_control.menuRiskBotManagement")
-      }
-    },
-    {
-      path: "/risk_control/playerPortraitMonitoring_management",
-      name: "RiskControlPlayerPortraitMonitoringManagement",
-      component: () => import("@/views/risk_control/playerPortraitMonitoring_management/index.vue"),
-      meta: {
-        title: $t("risk_control.menuPlayerPortraitMonitoringManagement")
-      }
-    },
-    {
-      path: "/risk_control/risk_agency_tag_system",
-      name: "RiskControlRiskAgencyTagSystem",
-      component: () => import("@/views/risk_control/risk_agency_tag_system/index.vue"),
-      meta: {
-        title: $t("risk_control.menuRiskAgencyTagSystem")
-      }
-    },
-    {
       path: "/risk_control/first_review",
       name: "RiskControlFirstReview",
       component: () => import("@/views/risk_control/first_review/index.vue"),
@@ -58,6 +34,30 @@ export default {
       component: () => import("@/views/risk_control/deviceblacklist/index.vue"),
       meta: {
         title: $t("risk_control.menuDeviceblacklist")
+      }
+    },
+    {
+      path: "/risk_control/risk_bot_management",
+      name: "RiskControlRiskBotManagement",
+      component: () => import("@/views/risk_control/risk_bot_management/index.vue"),
+      meta: {
+        title: $t("risk_control.menuRiskBotManagement")
+      }
+    },
+    {
+      path: "/risk_control/playerPortraitMonitoring_management",
+      name: "RiskControlPlayerPortraitMonitoringManagement",
+      component: () => import("@/views/risk_control/playerPortraitMonitoring_management/index.vue"),
+      meta: {
+        title: $t("risk_control.menuPlayerPortraitMonitoringManagement")
+      }
+    },
+    {
+      path: "/risk_control/risk_agency_tag_system",
+      name: "RiskControlRiskAgencyTagSystem",
+      component: () => import("@/views/risk_control/risk_agency_tag_system/index.vue"),
+      meta: {
+        title: $t("risk_control.menuRiskAgencyTagSystem")
       }
     },
     {

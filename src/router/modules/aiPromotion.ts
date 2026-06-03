@@ -13,19 +13,19 @@ export default {
   },
   children: [
     {
-      path: "/aiPromotion/launched_list",
-      name: "AiPromotionLaunchedList",
-      component: () => import("@/views/aiPromotion/launched_list/index.vue"),
-      meta: {
-        title: $t("aiPromotion.menuLaunchedList")
-      }
-    },
-    {
       path: "/aiPromotion/list",
       name: "AiPromotionList",
       component: () => import("@/views/aiPromotion/list/index.vue"),
       meta: {
         title: $t("aiPromotion.menuList")
+      }
+    },
+    {
+      path: "/aiPromotion/launched_list",
+      name: "AiPromotionLaunchedList",
+      component: () => import("@/views/aiPromotion/launched_list/index.vue"),
+      meta: {
+        title: $t("aiPromotion.menuLaunchedList")
       }
     }
   ]

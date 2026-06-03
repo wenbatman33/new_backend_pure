@@ -13,11 +13,11 @@ export default {
   },
   children: [
     {
-      path: "/saba/promotion",
-      name: "SabaPromotion",
-      component: () => import("@/views/saba/promotion/index.vue"),
+      path: "/saba/betdetail",
+      name: "SabaBetdetail",
+      component: () => import("@/views/saba/betdetail/index.vue"),
       meta: {
-        title: $t("saba.menuPromotion")
+        title: $t("saba.menuBetdetail")
       }
     },
     {
@@ -29,19 +29,19 @@ export default {
       }
     },
     {
+      path: "/saba/promotion",
+      name: "SabaPromotion",
+      component: () => import("@/views/saba/promotion/index.vue"),
+      meta: {
+        title: $t("saba.menuPromotion")
+      }
+    },
+    {
       path: "/saba/dashboard",
       name: "SabaDashboard",
       component: () => import("@/views/saba/dashboard/index.vue"),
       meta: {
         title: $t("saba.menuDashboard")
-      }
-    },
-    {
-      path: "/saba/betdetail",
-      name: "SabaBetdetail",
-      component: () => import("@/views/saba/betdetail/index.vue"),
-      meta: {
-        title: $t("saba.menuBetdetail")
       }
     }
   ]

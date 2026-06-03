@@ -13,11 +13,11 @@ export default {
   },
   children: [
     {
-      path: "/authSystem/role",
-      name: "RoleManagement",
-      component: () => import("@/views/authSystem/role/index.vue"),
+      path: "/authSystem/account",
+      name: "AuthSystemAccount",
+      component: () => import("@/views/authSystem/account/index.vue"),
       meta: {
-        title: $t("authSystem.menuRole")
+        title: $t("authSystem.menuAccount")
       }
     },
     {
@@ -29,11 +29,11 @@ export default {
       }
     },
     {
-      path: "/authSystem/otpStatusList",
-      name: "AuthSystemOtpStatusList",
-      component: () => import("@/views/authSystem/otpStatusList/index.vue"),
+      path: "/authSystem/role",
+      name: "RoleManagement",
+      component: () => import("@/views/authSystem/role/index.vue"),
       meta: {
-        title: $t("authSystem.menuOtpStatusList")
+        title: $t("authSystem.menuRole")
       }
     },
     {
@@ -45,19 +45,19 @@ export default {
       }
     },
     {
-      path: "/authSystem/account",
-      name: "AuthSystemAccount",
-      component: () => import("@/views/authSystem/account/index.vue"),
-      meta: {
-        title: $t("authSystem.menuAccount")
-      }
-    },
-    {
       path: "/authSystem/authLog",
       name: "AuthSystemAuthLog",
       component: () => import("@/views/authSystem/authLog/index.vue"),
       meta: {
         title: $t("authSystem.menuAuthLog")
+      }
+    },
+    {
+      path: "/authSystem/otpStatusList",
+      name: "AuthSystemOtpStatusList",
+      component: () => import("@/views/authSystem/otpStatusList/index.vue"),
+      meta: {
+        title: $t("authSystem.menuOtpStatusList")
       }
     }
   ]

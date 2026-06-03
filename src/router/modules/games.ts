@@ -21,43 +21,11 @@ export default {
       }
     },
     {
-      path: "/games/lmGameList",
-      name: "GamesLmGameList",
-      component: () => import("@/views/games/lmGameList/index.vue"),
+      path: "/games/gameGroup",
+      name: "GamesGameGroup",
+      component: () => import("@/views/games/gameGroup/index.vue"),
       meta: {
-        title: $t("games.menuLmGameList")
-      }
-    },
-    {
-      path: "/games/recommendHome",
-      name: "GamesRecommendHome",
-      component: () => import("@/views/games/recommendHome/index.vue"),
-      meta: {
-        title: $t("games.menuRecommendHome")
-      }
-    },
-    {
-      path: "/games/leagueList",
-      name: "GamesLeagueList",
-      component: () => import("@/views/games/leagueList/index.vue"),
-      meta: {
-        title: $t("games.menuLeagueList")
-      }
-    },
-    {
-      path: "/games/lmGameLog",
-      name: "GamesLmGameLog",
-      component: () => import("@/views/games/lmGameLog/index.vue"),
-      meta: {
-        title: $t("games.menuLmGameLog")
-      }
-    },
-    {
-      path: "/games/leagueBetRecord",
-      name: "GamesLeagueBetRecord",
-      component: () => import("@/views/games/leagueBetRecord/index.vue"),
-      meta: {
-        title: $t("games.menuLeagueBetRecord")
+        title: $t("games.menuGameGroup")
       }
     },
     {
@@ -66,6 +34,22 @@ export default {
       component: () => import("@/views/games/game/index.vue"),
       meta: {
         title: $t("games.menuGame")
+      }
+    },
+    {
+      path: "/games/tag",
+      name: "GamesTag",
+      component: () => import("@/views/games/tag/index.vue"),
+      meta: {
+        title: $t("games.menuTag")
+      }
+    },
+    {
+      path: "/games/recommendHome",
+      name: "GamesRecommendHome",
+      component: () => import("@/views/games/recommendHome/index.vue"),
+      meta: {
+        title: $t("games.menuRecommendHome")
       }
     },
     {
@@ -85,11 +69,11 @@ export default {
       }
     },
     {
-      path: "/games/lmGameAgency",
-      name: "GamesLmGameAgency",
-      component: () => import("@/views/games/lmGameAgency/index.vue"),
+      path: "/games/leagueList",
+      name: "GamesLeagueList",
+      component: () => import("@/views/games/leagueList/index.vue"),
       meta: {
-        title: $t("games.menuLmGameAgency")
+        title: $t("games.menuLeagueList")
       }
     },
     {
@@ -101,19 +85,38 @@ export default {
       }
     },
     {
-      path: "/games/gameGroup",
-      name: "GamesGameGroup",
-      component: () => import("@/views/games/gameGroup/index.vue"),
+      path: "/games/leagueBetRecord",
+      name: "GamesLeagueBetRecord",
+      component: () => import("@/views/games/leagueBetRecord/index.vue"),
       meta: {
-        title: $t("games.menuGameGroup")
+        title: $t("games.menuLeagueBetRecord")
       }
     },
     {
-      path: "/games/tag",
-      name: "GamesTag",
-      component: () => import("@/views/games/tag/index.vue"),
+      path: "/games/lmGameList",
+      name: "GamesLmGameList",
+      component: () => import("@/views/games/lmGameList/index.vue"),
       meta: {
-        title: $t("games.menuTag")
+        title: $t("games.menuLmGameList"),
+        showLink: false
+      }
+    },
+    {
+      path: "/games/lmGameLog",
+      name: "GamesLmGameLog",
+      component: () => import("@/views/games/lmGameLog/index.vue"),
+      meta: {
+        title: $t("games.menuLmGameLog"),
+        showLink: false
+      }
+    },
+    {
+      path: "/games/lmGameAgency",
+      name: "GamesLmGameAgency",
+      component: () => import("@/views/games/lmGameAgency/index.vue"),
+      meta: {
+        title: $t("games.menuLmGameAgency"),
+        showLink: false
       }
     },
     {
@@ -121,7 +124,8 @@ export default {
       name: "GamesLmGameGroup",
       component: () => import("@/views/games/lmGameGroup/index.vue"),
       meta: {
-        title: $t("games.menuLmGameGroup")
+        title: $t("games.menuLmGameGroup"),
+        showLink: false
       }
     }
   ]

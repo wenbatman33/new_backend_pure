@@ -17,7 +17,8 @@ export default {
       name: "AiCsAssistantIndex",
       component: () => import("@/views/aiCsAssistant/index.vue"),
       meta: {
-        title: $t("aiCsAssistant.menu")
+        title: $t("aiCsAssistant.menu"),
+        showLink: false
       }
     }
   ]

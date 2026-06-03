@@ -13,27 +13,11 @@ export default {
   },
   children: [
     {
-      path: "/promotion/apply",
-      name: "PromotionApply",
-      component: () => import("@/views/promotion/apply/index.vue"),
+      path: "/promotion/list",
+      name: "PromotionList",
+      component: () => import("@/views/promotion/list/index.vue"),
       meta: {
-        title: $t("promotion.menuApply")
-      }
-    },
-    {
-      path: "/promotion/competitionList",
-      name: "PromotionCompetitionList",
-      component: () => import("@/views/promotion/competitionList/index.vue"),
-      meta: {
-        title: $t("promotion.menuCompetitionList")
-      }
-    },
-    {
-      path: "/promotion/launched_list",
-      name: "PromotionLaunchedList",
-      component: () => import("@/views/promotion/launched_list/index.vue"),
-      meta: {
-        title: $t("promotion.menuLaunchedList")
+        title: $t("promotion.menuList")
       }
     },
     {
@@ -45,27 +29,19 @@ export default {
       }
     },
     {
-      path: "/promotion/list",
-      name: "PromotionList",
-      component: () => import("@/views/promotion/list/index.vue"),
+      path: "/promotion/apply",
+      name: "PromotionApply",
+      component: () => import("@/views/promotion/apply/index.vue"),
       meta: {
-        title: $t("promotion.menuList")
+        title: $t("promotion.menuApply")
       }
     },
     {
-      path: "/promotion/winnerRank",
-      name: "PromotionWinnerRank",
-      component: () => import("@/views/promotion/winnerRank/index.vue"),
+      path: "/promotion/launched_list",
+      name: "PromotionLaunchedList",
+      component: () => import("@/views/promotion/launched_list/index.vue"),
       meta: {
-        title: $t("promotion.menuWinnerRank")
-      }
-    },
-    {
-      path: "/promotion/discountCategoryList",
-      name: "PromotionDiscountCategoryList",
-      component: () => import("@/views/promotion/discountCategoryList/index.vue"),
-      meta: {
-        title: $t("promotion.menuDiscountCategoryList")
+        title: $t("promotion.menuLaunchedList")
       }
     },
     {
@@ -73,7 +49,8 @@ export default {
       name: "PromotionSmallGame",
       component: () => import("@/views/promotion/smallGame/index.vue"),
       meta: {
-        title: $t("promotion.menuSmallGame")
+        title: $t("promotion.menuSmallGame"),
+        showLink: false
       }
     },
     {
@@ -85,11 +62,36 @@ export default {
       }
     },
     {
+      path: "/promotion/competitionList",
+      name: "PromotionCompetitionList",
+      component: () => import("@/views/promotion/competitionList/index.vue"),
+      meta: {
+        title: $t("promotion.menuCompetitionList")
+      }
+    },
+    {
       path: "/promotion/lottery",
       name: "PromotionLottery",
       component: () => import("@/views/promotion/lottery/index.vue"),
       meta: {
         title: $t("promotion.menuLottery")
+      }
+    },
+    {
+      path: "/promotion/discountCategoryList",
+      name: "PromotionDiscountCategoryList",
+      component: () => import("@/views/promotion/discountCategoryList/index.vue"),
+      meta: {
+        title: $t("promotion.menuDiscountCategoryList")
+      }
+    },
+    {
+      path: "/promotion/winnerRank",
+      name: "PromotionWinnerRank",
+      component: () => import("@/views/promotion/winnerRank/index.vue"),
+      meta: {
+        title: $t("promotion.menuWinnerRank"),
+        showLink: false
       }
     }
   ]

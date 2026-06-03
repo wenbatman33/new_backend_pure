@@ -13,75 +13,11 @@ export default {
   },
   children: [
     {
-      path: "/activity/quizList",
-      name: "ActivityQuizList",
-      component: () => import("@/views/activity/quizList/index.vue"),
-      meta: {
-        title: $t("activity.menuQuizList")
-      }
-    },
-    {
-      path: "/activity/recommended",
-      name: "ActivityRecommended",
-      component: () => import("@/views/activity/recommended/index.vue"),
-      meta: {
-        title: $t("activity.menuRecommended")
-      }
-    },
-    {
-      path: "/activity/event0054Recommender",
-      name: "ActivityEvent0054Recommender",
-      component: () => import("@/views/activity/event0054Recommender/index.vue"),
-      meta: {
-        title: $t("activity.menuEvent0054Recommender")
-      }
-    },
-    {
       path: "/activity/match",
       name: "ActivityMatch",
       component: () => import("@/views/activity/match/index.vue"),
       meta: {
         title: $t("activity.menuMatch")
-      }
-    },
-    {
-      path: "/activity/uefa5board2",
-      name: "ActivityUefa5board2",
-      component: () => import("@/views/activity/uefa5board2/index.vue"),
-      meta: {
-        title: $t("activity.menuUefa5board2")
-      }
-    },
-    {
-      path: "/activity/referList",
-      name: "ActivityReferList",
-      component: () => import("@/views/activity/referList/index.vue"),
-      meta: {
-        title: $t("activity.menuReferList")
-      }
-    },
-    {
-      path: "/activity/worldcup",
-      name: "ActivityWorldcup",
-      component: () => import("@/views/activity/worldcup/index.vue"),
-      meta: {
-        title: $t("activity.menuWorldcup")
-      }
-    },
-    {
-      path: "/activity/quiz",
-      name: "ActivityQuiz",
-      component: () => import("@/views/activity/quiz/index.vue"),
-      meta: {
-        title: $t("activity.menuQuiz")
-      }
-    },
-    {
-      path: "/activity/leagueSettings",
-      name: "ActivityLeagueSettings",
-      component: () => import("@/views/activity/leagueSettings/index.vue"),
-      meta: {
-        title: $t("activity.menuLeagueSettings")
       }
     },
     {
@@ -93,11 +29,99 @@ export default {
       }
     },
     {
+      path: "/activity/uefa5board1",
+      name: "ActivityUefa5board1",
+      component: () => import("@/views/activity/uefa5board1/index.vue"),
+      meta: {
+        title: $t("activity.menuUefa5board1")
+      }
+    },
+    {
+      path: "/activity/leagueSettings",
+      name: "ActivityLeagueSettings",
+      component: () => import("@/views/activity/leagueSettings/index.vue"),
+      meta: {
+        title: $t("activity.menuLeagueSettings")
+      }
+    },
+    {
+      path: "/activity/uefa5board2",
+      name: "ActivityUefa5board2",
+      component: () => import("@/views/activity/uefa5board2/index.vue"),
+      meta: {
+        title: $t("activity.menuUefa5board2")
+      }
+    },
+    {
       path: "/activity/streaming",
       name: "ActivityStreaming",
       component: () => import("@/views/activity/streaming/index.vue"),
       meta: {
         title: $t("activity.menuStreaming")
+      }
+    },
+    {
+      path: "/activity/quiz",
+      name: "ActivityQuiz",
+      component: () => import("@/views/activity/quiz/index.vue"),
+      meta: {
+        title: $t("activity.menuQuiz")
+      }
+    },
+    {
+      path: "/activity/quiz_world_cup",
+      name: "ActivityQuizWorldCup",
+      component: () => import("@/views/activity/quiz_world_cup/index.vue"),
+      meta: {
+        title: $t("activity.menuQuizWorldCup")
+      }
+    },
+    {
+      path: "/activity/quizList",
+      name: "ActivityQuizList",
+      component: () => import("@/views/activity/quizList/index.vue"),
+      meta: {
+        title: $t("activity.menuQuizList")
+      }
+    },
+    {
+      path: "/activity/worldcup",
+      name: "ActivityWorldcup",
+      component: () => import("@/views/activity/worldcup/index.vue"),
+      meta: {
+        title: $t("activity.menuWorldcup")
+      }
+    },
+    {
+      path: "/activity/referList",
+      name: "ActivityReferList",
+      component: () => import("@/views/activity/referList/index.vue"),
+      meta: {
+        title: $t("activity.menuReferList")
+      }
+    },
+    {
+      path: "/activity/event0054Recommender",
+      name: "ActivityEvent0054Recommender",
+      component: () => import("@/views/activity/event0054Recommender/index.vue"),
+      meta: {
+        title: $t("activity.menuEvent0054Recommender")
+      }
+    },
+    {
+      path: "/activity/event0054Recommended",
+      name: "ActivityEvent0054Recommended",
+      component: () => import("@/views/activity/event0054Recommended/index.vue"),
+      meta: {
+        title: $t("activity.menuEvent0054Recommended")
+      }
+    },
+    {
+      path: "/activity/event0054Hierarchy",
+      name: "ActivityEvent0054Hierarchy",
+      component: () => import("@/views/activity/event0054Hierarchy/index.vue"),
+      meta: {
+        title: $t("activity.menuEvent0054Hierarchy")
       }
     },
     {
@@ -117,35 +141,12 @@ export default {
       }
     },
     {
-      path: "/activity/event0054Recommended",
-      name: "ActivityEvent0054Recommended",
-      component: () => import("@/views/activity/event0054Recommended/index.vue"),
+      path: "/activity/recommended",
+      name: "ActivityRecommended",
+      component: () => import("@/views/activity/recommended/index.vue"),
       meta: {
-        title: $t("activity.menuEvent0054Recommended")
-      }
-    },
-    {
-      path: "/activity/uefa5board1",
-      name: "ActivityUefa5board1",
-      component: () => import("@/views/activity/uefa5board1/index.vue"),
-      meta: {
-        title: $t("activity.menuUefa5board1")
-      }
-    },
-    {
-      path: "/activity/quiz_world_cup",
-      name: "ActivityQuizWorldCup",
-      component: () => import("@/views/activity/quiz_world_cup/index.vue"),
-      meta: {
-        title: $t("activity.menuQuizWorldCup")
-      }
-    },
-    {
-      path: "/activity/event0054Hierarchy",
-      name: "ActivityEvent0054Hierarchy",
-      component: () => import("@/views/activity/event0054Hierarchy/index.vue"),
-      meta: {
-        title: $t("activity.menuEvent0054Hierarchy")
+        title: $t("activity.menuRecommended"),
+        showLink: false
       }
     }
   ]

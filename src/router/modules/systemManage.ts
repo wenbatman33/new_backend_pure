@@ -5,21 +5,13 @@ export default {
   path: "/systemManage",
   name: "SystemManage",
   component: Layout,
-  redirect: "/systemManage/cloudIpLibrary",
+  redirect: "/systemManage/systemSwitch",
   meta: {
     icon: "ant-design:setting-twotone",
     title: $t("systemManage.menu"),
     rank: 11
   },
   children: [
-    {
-      path: "/systemManage/cloudIpLibrary",
-      name: "SystemManageCloudIpLibrary",
-      component: () => import("@/views/systemManage/cloudIpLibrary/index.vue"),
-      meta: {
-        title: $t("systemManage.menuCloudIpLibrary")
-      }
-    },
     {
       path: "/systemManage/systemSwitch",
       name: "SystemManageSystemSwitch",
@@ -29,19 +21,11 @@ export default {
       }
     },
     {
-      path: "/systemManage/deploy",
-      name: "SystemManageDeploy",
-      component: () => import("@/views/systemManage/deploy/index.vue"),
+      path: "/systemManage/loginSwitch",
+      name: "SystemManageLoginSwitch",
+      component: () => import("@/views/systemManage/loginSwitch/index.vue"),
       meta: {
-        title: $t("systemManage.menuDeploy")
-      }
-    },
-    {
-      path: "/systemManage/smsVendor",
-      name: "SystemManageSmsVendor",
-      component: () => import("@/views/systemManage/smsVendor/index.vue"),
-      meta: {
-        title: $t("systemManage.menuSmsVendor")
+        title: $t("systemManage.menuLoginSwitch")
       }
     },
     {
@@ -53,27 +37,11 @@ export default {
       }
     },
     {
-      path: "/systemManage/configTmpKey",
-      name: "SystemManageConfigTmpKey",
-      component: () => import("@/views/systemManage/configTmpKey/index.vue"),
+      path: "/systemManage/smsVendor",
+      name: "SystemManageSmsVendor",
+      component: () => import("@/views/systemManage/smsVendor/index.vue"),
       meta: {
-        title: $t("systemManage.menuConfigTmpKey")
-      }
-    },
-    {
-      path: "/systemManage/tgRobotNotifySetting",
-      name: "SystemManageTgRobotNotifySetting",
-      component: () => import("@/views/systemManage/tgRobotNotifySetting/index.vue"),
-      meta: {
-        title: $t("systemManage.menuTgRobotNotifySetting")
-      }
-    },
-    {
-      path: "/systemManage/withdrawalTime",
-      name: "SystemManageWithdrawalTime",
-      component: () => import("@/views/systemManage/withdrawalTime/index.vue"),
-      meta: {
-        title: $t("systemManage.menuWithdrawalTime")
+        title: $t("systemManage.menuSmsVendor")
       }
     },
     {
@@ -85,19 +53,53 @@ export default {
       }
     },
     {
-      path: "/systemManage/PICSizeMgt",
-      name: "SystemManagePICSizeMgt",
-      component: () => import("@/views/systemManage/PICSizeMgt/index.vue"),
+      path: "/systemManage/deploy",
+      name: "SystemManageDeploy",
+      component: () => import("@/views/systemManage/deploy/index.vue"),
       meta: {
-        title: $t("systemManage.menuPICSizeMgt")
+        title: $t("systemManage.menuDeploy")
+      }
+    },
+    {
+      path: "/systemManage/configTmpKey",
+      name: "SystemManageConfigTmpKey",
+      component: () => import("@/views/systemManage/configTmpKey/index.vue"),
+      meta: {
+        title: $t("systemManage.menuConfigTmpKey")
+      }
+    },
+    {
+      path: "/systemManage/withdrawalTime",
+      name: "SystemManageWithdrawalTime",
+      component: () => import("@/views/systemManage/withdrawalTime/index.vue"),
+      meta: {
+        title: $t("systemManage.menuWithdrawalTime")
       }
     },
     {
       path: "/systemManage/behaviorVerificationManagement",
       name: "SystemManageBehaviorVerificationManagement",
-      component: () => import("@/views/systemManage/behaviorVerificationManagement/index.vue"),
+      component: () =>
+        import("@/views/systemManage/behaviorVerificationManagement/index.vue"),
       meta: {
         title: $t("systemManage.menuBehaviorVerificationManagement")
+      }
+    },
+    {
+      path: "/systemManage/tgRobotNotifySetting",
+      name: "SystemManageTgRobotNotifySetting",
+      component: () =>
+        import("@/views/systemManage/tgRobotNotifySetting/index.vue"),
+      meta: {
+        title: $t("systemManage.menuTgRobotNotifySetting")
+      }
+    },
+    {
+      path: "/systemManage/PICSizeMgt",
+      name: "SystemManagePICSizeMgt",
+      component: () => import("@/views/systemManage/PICSizeMgt/index.vue"),
+      meta: {
+        title: $t("systemManage.menuPICSizeMgt")
       }
     },
     {
@@ -109,11 +111,11 @@ export default {
       }
     },
     {
-      path: "/systemManage/loginSwitch",
-      name: "SystemManageLoginSwitch",
-      component: () => import("@/views/systemManage/loginSwitch/index.vue"),
+      path: "/systemManage/cloudIpLibrary",
+      name: "SystemManageCloudIpLibrary",
+      component: () => import("@/views/systemManage/cloudIpLibrary/index.vue"),
       meta: {
-        title: $t("systemManage.menuLoginSwitch")
+        title: $t("systemManage.menuCloudIpLibrary")
       }
     }
   ]

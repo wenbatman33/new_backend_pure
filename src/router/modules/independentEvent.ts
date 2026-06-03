@@ -13,11 +13,11 @@ export default {
   },
   children: [
     {
-      path: "/independentEvent/missionCenter",
-      name: "IndependentEventMissionCenter",
-      component: () => import("@/views/independentEvent/missionCenter/index.vue"),
+      path: "/independentEvent/lotteryegg",
+      name: "IndependentEventLotteryegg",
+      component: () => import("@/views/independentEvent/lotteryegg/index.vue"),
       meta: {
-        title: $t("independentEvent.menuMissionCenter")
+        title: $t("independentEvent.menuLotteryegg")
       }
     },
     {
@@ -29,11 +29,11 @@ export default {
       }
     },
     {
-      path: "/independentEvent/lotteryegg",
-      name: "IndependentEventLotteryegg",
-      component: () => import("@/views/independentEvent/lotteryegg/index.vue"),
+      path: "/independentEvent/missionCenter",
+      name: "IndependentEventMissionCenter",
+      component: () => import("@/views/independentEvent/missionCenter/index.vue"),
       meta: {
-        title: $t("independentEvent.menuLotteryegg")
+        title: $t("independentEvent.menuMissionCenter")
       }
     },
     {
