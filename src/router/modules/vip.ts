@@ -68,6 +68,30 @@ export default {
       meta: {
         title: $t("vip.menuVipManualReplenishmentWater")
       }
+    },
+    {
+      path: "/vip/vip1",
+      name: "VipVip1",
+      component: () => import("@/views/sys/vip1/index.vue"),
+      meta: {
+        title: $t("sys.menuVip1")
+      }
+    },
+    {
+      path: "/vip/vip2",
+      name: "VipVip2",
+      component: () => import("@/views/sys/vip2/index.vue"),
+      meta: {
+        title: $t("sys.menuVip2")
+      }
+    },
+    {
+      path: "/vip/vip3",
+      name: "VipVip3",
+      component: () => import("@/views/sys/vip3/index.vue"),
+      meta: {
+        title: $t("sys.menuVip3")
+      }
     }
   ]
 } satisfies RouteConfigsTable;

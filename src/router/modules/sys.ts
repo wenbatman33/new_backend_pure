@@ -1,47 +1,27 @@
 import { $t } from "@/plugins/i18n";
 const Layout = () => import("@/layout/index.vue");
 
+// VIP1/VIP2/VIP3 已併入 VIP 選單(見 router/modules/vip.ts)；
+// 此處只保留 BindingAuth(登入綁定流程用、非選單頁)，整個 sys 群組不顯示於選單。
 export default {
   path: "/sys",
   name: "Sys",
   component: Layout,
-  redirect: "/sys/vip1",
+  redirect: "/sys/BindingAuth",
   meta: {
     icon: "ant-design:trophy-twotone",
     title: $t("sys.menu"),
-    rank: 7
+    rank: 7,
+    showLink: false
   },
   children: [
-    {
-      path: "/sys/vip1",
-      name: "SysVip1",
-      component: () => import("@/views/sys/vip1/index.vue"),
-      meta: {
-        title: $t("sys.menuVip1")
-      }
-    },
-    {
-      path: "/sys/vip2",
-      name: "SysVip2",
-      component: () => import("@/views/sys/vip2/index.vue"),
-      meta: {
-        title: $t("sys.menuVip2")
-      }
-    },
-    {
-      path: "/sys/vip3",
-      name: "SysVip3",
-      component: () => import("@/views/sys/vip3/index.vue"),
-      meta: {
-        title: $t("sys.menuVip3")
-      }
-    },
     {
       path: "/sys/BindingAuth",
       name: "SysBindingAuth",
       component: () => import("@/views/sys/BindingAuth/index.vue"),
       meta: {
-        title: $t("sys.menuBindingAuth")
+        title: $t("sys.menuBindingAuth"),
+        showLink: false
       }
     }
   ]
